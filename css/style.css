@@ -1,0 +1,635 @@
+@font-face {
+    font-family: 'Samim-FD';
+    src: url('../font/Samim-FD.woff') format('woff');
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Samim-FD' , sans-serif;
+}
+
+
+
+.container {
+    background: linear-gradient(RGBA(13 , 70 , 83 , 0.78) , RGBA(13 , 70 , 83 , 0.78)) , url('../assets/img/bg-banner.jpg');
+    width: 100%;
+    height: 660px;
+}
+
+
+
+.navbar ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 30px;
+    position: relative;
+    /* left: 900px; */
+    right: 120px;
+}
+
+.navbar {
+    position: fixed;
+    background-color: RGBA(13 , 70 , 83 , 0.78 ) ;
+    width: 100%;
+    height: 70px;
+    z-index: 2;
+}
+
+
+
+.logo {
+    position: relative;
+    float: left;
+    width: 110px;
+    margin-left: 120px;
+    margin-top: 15px;
+}
+
+
+
+.header {
+    text-align: center;
+    padding-top: 200px;
+}
+
+
+
+.header h1 {
+    font-size: 35px;
+    color: snow;
+    padding: 15px 0 15px 0;
+}
+
+
+
+.header p {
+    font-size: 20px;
+    color: snow;
+    padding: 0px 0 15px 0;
+}
+
+
+
+.header a {
+    text-decoration: none;
+    color: snow;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 60px;
+    background-color: rgba(12 , 184 , 182 , 0.91);
+}
+
+
+
+.doctor , .bag , .phone , .ambulance {
+    width: 50px;
+}
+
+
+.bag , .ambulance {
+    padding-top: 120px;
+}
+
+
+.services {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(3 , 385px);
+    grid-template-rows: repeat(3 , 233px);
+}
+
+
+
+.service {
+    position: relative;
+    right: 100px;
+    margin-top: 280px;
+    padding: 5px 10px 10px 10px;
+    font-size: 25px;
+}
+
+
+
+.service img {
+    margin: 10px;
+}
+
+
+.service p {
+    color: #99999999;
+    font-size: 20px;
+    /* font-weight: 600; */
+    line-height: 25px;
+}
+
+
+
+.service h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom:20px ;
+}
+
+
+
+.third h4 {
+    font-size: 25px;
+}
+
+.third {
+    padding-right: 60px;
+}
+
+
+
+hr {
+    height: 3px;
+    width: 60px;
+    background-color: #ffb337;
+    position: relative;
+    border: 0;
+    margin: 20px 0 20px 0;
+}
+
+
+
+table , td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+
+td {
+    color: white;
+    border: 0px solid #ededed;
+    border-top: 1px solid rgba(216 , 216 , 216 , 0.6);
+    padding: 2px 25px 2px 40px;
+}
+
+
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(3 , 390px);
+    grid-template-rows: repeat(3 , 250px);
+    gap: 2px;
+    margin-top: 170px;
+    margin-right: 100px;
+    z-index: 0;
+}
+
+
+
+.item , .item1 {
+    position: relative;
+    right: 0px;
+    top: 150px;
+    background-color: #0cb8b6;
+    padding: 0px 10px 10px 10px;
+    font-size: 15px;
+    text-align: right;
+}
+
+
+
+.text-time {
+    position: relative;
+    bottom: 35px;
+}
+
+.item h4 {
+    color: white;
+    text-align: right;
+    padding: 30px 0px 10px 10px;
+    font-size: 30px;
+}
+
+
+
+.item1 h4 {
+    color: white;
+    text-align: right;
+    padding: 30px 0px 10px 10px;
+    font-size: 30px;
+}
+
+
+.item a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    font-size: 15px;
+}
+
+
+.item1 a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    font-size: 15px;
+}
+
+
+.item , .item1 {
+    margin-left: 45px;
+}
+
+
+
+.table p {
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.textbox {
+    display: grid;
+    grid-template-columns: repeat(2 , 500px);
+    gap: 30px;
+    position: relative;
+    bottom: 300px;
+    margin-right: 210px;
+    margin-top: 30px;
+}
+
+
+
+.iteminbox p {
+    color: #999999;
+    width: 90%;
+
+}
+
+
+
+.iteminbox li {
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 10px;
+    float: left;
+    font-weight: 900;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    background-color: #0cb8b6;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    position: relative;
+    bottom: 45px;
+    left: 15px;
+}
+
+
+
+.about {
+    position: relative;
+    bottom: 200px;
+}
+
+
+
+
+.about h1 {
+    margin-right: 120px;
+}
+
+
+
+
+.about hr {
+    margin-right: 120px;
+}
+
+
+
+.boximage {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    position: relative;
+    right: 105px;
+}
+
+
+
+.image {
+    border: 1px solid #999999;
+    width: 262px;
+    height: 400px;
+}
+
+
+
+.image img {
+    width: 252px;
+    padding: 5px;
+}
+
+
+
+.image li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 10px;
+    position: relative;
+    top: 10px;
+    right: 90px;
+}
+
+
+
+.image h2 {
+    padding: 10px;
+}
+
+
+
+.image p {
+    padding: 10px;
+}
+
+
+
+.containercomment {
+    background-color: #eeeeee;
+}
+
+
+
+.containercomment h1 {
+    margin-right: 120px;    
+}
+
+
+
+.containercomment hr {
+    margin-right: 120px;    
+}
+
+
+.comments {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 2px;
+    width: 1200px;
+}
+
+
+
+.comment {
+    width: 300px;
+    position: relative;
+    right: 125px;
+}
+
+
+
+.comment p {
+    color: #999999;
+}
+
+
+
+
+.textincomment {
+    height: 170px;
+    background-color: #fff;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 2px 0 rgba(0, 0, 0, .4);
+}
+
+
+
+.person-info img {
+    display: grid;
+    width: 50px;
+    position: relative;
+    bottom: 50px;
+    margin-right: 180px;
+}
+
+
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    position: relative;
+    bottom: 20px;
+    right: 170px;
+}
+
+
+
+.containercontact h2 {
+    margin-right: 120px;
+    margin-top: 25px;
+    font-size: 27px;
+}
+
+
+
+.containercontact hr {
+    margin-right: 120px;
+}
+
+
+
+.containercontact {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    position: relative;
+    right: 120px;
+    gap: 25px;
+}
+
+
+
+.contact h3 {
+    font-size: 25px;
+    padding: 10px 0px 35px 0px;
+}
+
+
+
+.contactform input {
+    width: 700px;
+    height: 40px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+.contactform a {
+    background-color: #0cb8b6;
+    color: #fff;
+    padding: 8px 10px;
+    text-decoration: none;
+    /* border-radius: 15px; */
+}
+
+
+.contactform textarea {
+    resize: none;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 15px;
+}
+
+
+
+.contactinfo p {
+    color: #99999999;
+    font-size: 17px;
+    padding-bottom: 23px;
+    position: relative;
+    left: 150px;
+}
+
+
+
+
+.contactinfo h3 {
+    position: relative;
+    left: 150px;
+}
+
+
+
+.contacticon ul {
+    position: relative;
+    left: 150px;
+    margin-top: 80px;
+}
+
+
+
+.contacticon li {
+    text-decoration: none;
+    list-style-type: none;
+    padding-bottom: 23px;
+    font-size: 14px;
+    color: #99999999;
+}
+
+
+
+.containerfooter {
+    background-color: RGBA(13 , 70 , 83 , 0.78);
+    margin-top: 100px;
+}
+
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    width: 1200px;
+    margin-right: 200px;
+}
+
+
+
+.footer h4 {
+    color: #fff;
+    font-size: 20px;
+    padding: 30px 0px 0px 10px;
+}
+
+
+
+.footer-icon li {
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+    color: white;
+    background-color: #0cb8b6;
+    padding: 15px;
+    position: relative;
+    top: 20px;
+}
+
+
+
+.footer-link li {
+    list-style-type: none;
+    padding-bottom: 3px;
+}
+
+
+.footer-link a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.footer-about p {
+    width: 400px;
+    color: white;
+    margin-top: 5px;
+}
+
+
+
+.copy hr {
+    margin: 20px 0px 0px 20px;
+    width: 100%;
+    height: 1px;
+    background-color: #999999;
+}
+
+
+
+.copy p {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+
+
+.containerfooter {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
